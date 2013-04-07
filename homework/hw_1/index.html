@@ -1,0 +1,89 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="normalize.css" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+	<title>hw1</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	 </head>
+		
+	<body id="p"> 
+	<header>
+	 <a href="#" class="logo">LOREM IPSUM NEWS</a>
+	
+	<h1>Новости</h1>
+	<nav> 
+	<ul>
+	<li>скандалы</li>
+	<li>&#8226;интриги</li>
+	<li>&#8226;расследования</li>
+	</ul>
+	</nav>
+	
+	</header>
+	
+	<div class="text">
+	<img src="images/hw_1_03.jpg" alt="скандал"/>
+	<p class="t" id="t1">Скандал</p>
+	 <a href="#">Страны Евросоюза могут ввести санкции против Google</a>
+	<p>Европейские власти обеспокоены политикой конфиденциальности компании Google. Google хранит личные данные пользователей в одном профиле,в котором может объединяться инфор- мация с нескольких десятков разных сайтов.</p>
+	</div>
+	
+	<div class="text">
+	<img src="images/hw_1_06.jpg" alt="интрига"/>
+	<p class="t" id="t2">Интрига</p>
+	 <a href="#">ФАС уличила ВГТРК в рекламе алкоголя при трансляции футбольного матча</a>
+	<p>Проверка фотографий и видео-записей показала, что на рекламных стендах стадиона "Стэм-фортБридж" во время указанного матча не были размещены рекламные плакаты данных про- изводителей алкогольной продукции. Рассмотрение данного дела ФАС России назначил на 15 мая 2013 года.</p>
+	 </div>
+	 
+	<div class="text">
+	<img src="images/hw_1_08.jpg" alt="расследование"/>
+	<p class="t" id="t3">Расследование</p>
+	<a href="#">Возобновление борьбы за домены .рф маловероятно,считают юристы</a>
+	<p>"По всем 70914 доенным именам поступили заявки от клиентов, желающих их приобрести в указанном порядке", - говориться в тексте судебного решения от 16 ноября 2011 г. Апелляцион- ная инстанция частично удовлетворила иск ФАС , а кассационная передала дело на рассмотре- ние в президиум ВАС.</p>
+	</div>
+	<footer>
+	<p>&#169; ЗАО &#171;Лорем ипсум ньюс&#187;</p>
+	</footer>
+	
+	<a onmouseover='this.style.cursor="pointer" 
+	' onfocus='this.blur();'
+	onclick="document.getElementById('PopUp').style.display='block'; 
+	document.getElementById('parent_popup').style.display='block';
+	document.getElementById('p').style.textShadow='0 0 5px black';
+	document.getElementById('t1').style.boxShadow='0 0 10px #ff6666';
+	document.getElementById('t2').style.boxShadow='0 0 10px #99cc66';
+	document.getElementById('t3').style.boxShadow='0 0 10px #6699cc';
+	document.getElementById('p').style.color='transparent';"
+	class="log" 
+	style='top:15px;
+	right:10px;	'>Войти</a>
+	<div id="parent_popup" style='display: none;'> </div>
+	<div id='PopUp' 
+	style='display: none;
+	position: fixed; width: 300px; height: 200px; left: 400px; top: 280px;   background-color: white;  font-size: 16px;'>
+	<form>
+		<input type="text" placeholder="Логин"> <br><br>
+		<input type="text" placeholder="Пароль"> <br> <br>
+		<input type="submit" style='padding: 2px 10px 2px 10px;' value="Войти" >
+	
+		<div><a onmouseover='this.style.cursor="pointer" 
+		' style='font-size: 16px; margin: -28px 0 0 100px;' 
+		onfocus='this.blur();' onclick="document.getElementById('PopUp').style.display = 'none'; 
+		document.getElementById('parent_popup').style.display = 'none'
+		document.getElementById('p').style.textShadow='none';
+		document.getElementById('t1').style.boxShadow='none';
+		document.getElementById('t2').style.boxShadow='none';
+		document.getElementById('t3').style.boxShadow='none';
+		document.getElementById('p').style.color='black';" class="log" >Отмена</a></div>
+	</form>
+	</div>
+	
+
+	</body>
+</html>
