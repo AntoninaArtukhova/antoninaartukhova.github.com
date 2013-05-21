@@ -99,7 +99,7 @@ h5 {
     font-size: 0.3em;
     width: 100%;
   }
-  .sub{
+  .sub {
     width: auto;
     float: left;
     margin: 0px;
@@ -149,23 +149,23 @@ h5 {
   .same a {
     font-size: 0.18em;
   }
-  .note{
+  .note {
     display: none;
   }
-  .more{
+  .more {
     border-top-width: thin;
   }
-  .same{
+  .same {
     max-width: 30%;
     margin-left: 0px;
     margin-right: 3%;
   }
-.topic a{
+  .topic a {
     font-size: 0.3em;
   }
- article img{
-  max-width: 25%;
- }
+  article img {
+    max-width: 25%;
+  }
 }
 .note {
   font-family: Verdana;
@@ -281,10 +281,10 @@ p {
   p {
     font-size: 0.2em;
   }
-  .menu{
+  .menu {
     font-size: 0.5em;
-  /*24px;*/
-
+    /*24px;*/
+   
   }
 }
 a {
@@ -303,6 +303,7 @@ footer {
   /*margin-left: 200px;
 margin-right: 200px;
 */
+ 
   padding-top: 0.75em;
   /*10px;*/
  
@@ -369,13 +370,13 @@ margin-right: 190px;
   .content {
     width: 95%;
   }
-  .more{
+  .more {
     width: 95%;
   }
-  .news{
+  .news {
     width: 95%;
   }
-  .t{
+  .t {
     position: absolute;
     left: 150px;
     margin: -10px 10px 0 0;
@@ -383,8 +384,12 @@ margin-right: 190px;
 }
 img {
   float: left;
-  margin-right: 5%;/*20px;
-*/  margin-bottom: 5%;/*20px;*/
+  margin-right: 5%;
+  /*20px;
+*/
+  margin-bottom: 5%;
+  /*20px;*/
+ 
   /*max-width: 100%;*/
  
 }
