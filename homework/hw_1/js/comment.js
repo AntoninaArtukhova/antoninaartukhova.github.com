@@ -1,5 +1,6 @@
 jQuery(document).ready(function() {
 	alert('test');
+	$(".warn").hide();
 	var days = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
 	var months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
 	function addCom() {
@@ -12,27 +13,22 @@ jQuery(document).ready(function() {
 		$year = date.getFullYear();
 		$hour = date.getHours();
 		$min = date.getMinutes();
-		flag=false;
+		/*if ($hour <10) {$hour = '0'+hour;};
+		if ($min <10) {$min = '0'+$min;};
+		if ($d < 10) {$d = '0'+$d;};
+		//if (month <10) {month = "0" + month;}*/
+		//flag=false;
 		if (($user!='')&&($comment!=''))
 		 {
-		 	
-		 	if (flag==true) 
-		 	{
-		 		$("div.dang").detach();
-		 		flag=false;};
-		 		
-		 	$("#add_com").after("</br><a href='#'id='new_com' >Ответить</a> <hr>");
-		 	$('#add_com').after($comment);
-		 	$('#add_com').after("</br>");
-		 	$("#add_com").after($user+' '+$hour+':'+$min+', '+$day+', '+$d+'.'+$month+'.'+$year);
-
+		 	$(".warn").hide();	
+		 	$com=' '+$hour+':'+$min+', '+$day+', '+$d+'.'+$month+'.'+$year;
+		 	$("#new_com").after("<p><strong>"+$user+"&nbsp;</strong>"+$com+"</p><p>"+$comment+"</p></br><a href='#'>Ответить</a><hr>");
 		 	$(".form_el").find('input:text').val('').html();
 		 	$(".form_el").find('textarea').val('').html();
-
 		 } 
 			else{
-				$(".dang").html("пожалуйста заполните поля");
-				flag=true;
+				$(".warn").show();
+				
 		};
 			}
 	$('#sub').on('click', addCom);
