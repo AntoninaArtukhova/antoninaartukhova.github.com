@@ -437,6 +437,14 @@ a.logo {
   float: left;
   width: 25%;
 }
+.comment-form{
+  width: 95%;
+  font-size: 0.9em;
+}
+fieldset{
+    margin-left: -10%;
+  }
+  
 @media screen and (max-width: 768px) {
   a.logo {
     font-size: 0.555em;
@@ -451,6 +459,14 @@ a.logo {
   a.logo {
     font-size: 0.7em;
   }
+  .comment-form{
+    font-size: 0.4em;
+  }
+  fieldset{
+    margin-left:0px;
+  }
+  
+
 }
 .clearfix {
   clear: both;
@@ -500,7 +516,9 @@ textarea {
   outline: none;
   resize: none;
   overflow: auto;
+width: 95%;
 }
 .answer{
   margin-left:10%;
 }
+
