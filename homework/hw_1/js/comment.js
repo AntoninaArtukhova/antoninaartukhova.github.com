@@ -1,9 +1,6 @@
-jQuery(document).ready(function() {
-	alert('test');
-	$(".warn").hide();
-	var days = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+function addCom() {
+		var days = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
 	var months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
-	function addCom() {
 		var date = new Date();
 		$user = $('.user').val();
 		$comment = $('.comment').val();
@@ -22,19 +19,27 @@ jQuery(document).ready(function() {
 		 {
 		 	$(".warn").hide();	
 		 	$com=' '+$hour+':'+$min+', '+$day+', '+$d+'.'+$month+'.'+$year;
-		 	$("#new_com").after("<p><strong>"+$user+"&nbsp;</strong>"+$com+"</p><p>"+$comment+"</p></br><a href='#'>Ответить</a><hr>");
+		 	$("#new_com").after("<p style='color:gray'><strong style='color:black'>"+$user+"&nbsp;</strong>"+$com+"</p><p style='border-bottom: 1px solid  gray'>"+$comment+"</br><a href='#' >Ответить</a></p>");
+		 	
 		 	$(".form_el").find('input:text').val('').html();
 		 	$(".form_el").find('textarea').val('').html();
+		 	
 		 } 
 			else{
 				$(".warn").show();
 				
 		};
-			}
-	$('#sub').on('click', addCom);
-	function addAns () {
+			};
+function addAns () {
 	//$('#text_com').text(comment);
-	alert('test111');	
-	}
-	$('#new_com').on('click', addAns);
+	alert('test111');
+	$(this).after($('#ans'));	
+	};
+jQuery(document).ready(function() {
+	alert('test');
+	$(".warn").hide();
+	
+		$('#sub').on('click', addCom);
+	
+	$('a.cc').on('click', addAns);
 	});
