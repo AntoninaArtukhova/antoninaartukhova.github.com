@@ -29,6 +29,7 @@ function addCom() {
 		 	 	$('#ans_answerer').css("display","none");
 		 	 };
 		 	$com=' '+$hour+':'+$min+', '+$day+', '+$d+'.'+$month+'.'+$year;
+		 	//$('#ans_answerer').css("display","none");  after
 		 	$("#new_com").after("<p style='color:gray; '><strong style='color:black'>"+$user+"&nbsp;</strong>"+$com+"</p><p style='border-bottom: 1px solid  gray'>"+$comment+"</br></br><a href='#' >Ответить</a></p>");
 		 	
 		 	$(".form_el").find('input:text').val('').html();
@@ -36,21 +37,23 @@ function addCom() {
 		 	$(".warn").hide();	
 		 } 
 			else{
-				$(".warn").show();
-				//$('.comment-form').after($('#warn'));
+				//$(".warn").show();
+				$('.warn').css("display","block");
+				$(this).after($('.warn'));
 		};
 			};
 function addAns () {
 	//$('#text_com').text(comment);
 	alert('test111');
 	$(".warn").hide();
+	//$('.warn').css("display","none");
 	$('#ans_answerer').css("display","block");
 	$(this).after($('#ans_answerer'));
 	$('#sub_answerer').on('click', addCom);	
 	};
 jQuery(document).ready(function() {
 	alert('test');
-	$(".warn").hide();
+	//$(".warn").hide();
 	
 		$('#sub').on('click', addCom);
 		
