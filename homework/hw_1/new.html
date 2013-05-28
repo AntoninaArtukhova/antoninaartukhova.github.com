@@ -61,6 +61,7 @@
 <div style="padding-top:10%;">
 	<fieldset style="margin-left:-10%;">
 	<lable style="font-size: 1.2em; margin-left:5%;">Комментарии () </lable> 
+	<div class="comment-form comment">
 <form name="comment" action="#" method="GET" id="ans" style="margin-left:5%; margin-top:5%;">
 	
 	<div class="form_el">
@@ -68,21 +69,57 @@
 	</div>
 	</br></br>
 	<div class="form_el">
-	<textarea placeholder="Введите текст сообщения..."   rows="3" cols="68" onfocus="this.rows='5'" onblur="this.rows='3'"class="comment"></textarea>
+	<textarea placeholder="Введите текст сообщения..."   rows="3" cols="68" onfocus="this.rows='5'" onblur="this.rows='3'" id="tc" class="tcomment"></textarea>
  	</div></br></br>  <!-- rows="3" -->
 	<input type="submit" value="Добавить комментарий" id="sub" style="float:right; margin-right:8%;"></br>
 </form>
-<div class="warn" style="color:red">
+</div>
+<div class="warn" style="color:red;">
 	</br><p><img src="images/warning.png">
 	&nbsp;Пожалуйста, заполните все поля перед отправкой</p></br>
 	</div>
-<div id="add_com" class="cc">
-<div id="new_com" >
+<div id="add_com" class="comment">
+<div id="new_com" class="comment" >
 
 	</div>
-	<div id='new_c'>
+	<div id='new_c' class="comment">
 	
 </div>
+</div>
+<div class="comment">
+<p style='color:gray'><strong style='color:black'>Сан Саныч&nbsp;</strong> 11:42, пятница, 25.05.2013</p>
+<p style='border-bottom: 1px solid  gray'>
+Всё правильно сделал. Нефиг пиво на открытом месте оставлять.</br></br>
+<a href="#">Ответить</a></p>		
+</div>
+<div class="comment-form answerer" style="display:none">
+<form name="comment_ans" action="#" method="GET" id="ans_answerer" style="margin-left:5%; margin-top:5%;">
+	
+	<div class="form_el">
+	<input type="text" placeholder="Представьтесь, пожалуйста"  size="35" id="user_answerer" class="user">
+	</div>
+	</br></br>
+	<div class="form_el">
+	<textarea placeholder="Введите текст сообщения..."   rows="3" cols="68" onfocus="this.rows='5'" onblur="this.rows='3'" id="tc_answerer" class="tcomment"></textarea>
+ 	</div></br></br>  <!-- rows="3" -->
+	<input type="submit" value="Добавить комментарий" id="sub_answerer" style="float:right; margin-right:8%;"></br></br>
+</form>
+
+</div>
+<div class="comment">
+<p style='color:gray'><strong style='color:black'>Vladimir Petrov&nbsp;</strong> 9:05, пятница, 25.05.2013</p>
+<p style='border-bottom: 1px solid  gray'>это же сплошное мимимими</br></br>
+<a href="#">Ответить</a></p>
+</div>
+<div class="comment answer">
+<p style='color:gray'><strong style='color:black'>Серега&nbsp;</strong> 15:10, пятница, 25.05.2013</p>
+<p style='border-bottom: 1px solid  gray'>хороший человек. <br>а откуда он тырил пиво-то?</br></br>
+<a href="#">Ответить</a></p>
+</div>
+<div class="comment">
+<p style='color:gray'><strong style='color:black'>Иван Васильев&nbsp;</strong> 0:12, пятница, 25.05.2013</p>
+<p style='border-bottom: 1px solid  gray'>хотели бы пригласить его в гости, чтобы пообщаться и обнять его.</br></br>
+<a href="#">Ответить</a></p>
 </div>
 </fieldset>
 </div>
