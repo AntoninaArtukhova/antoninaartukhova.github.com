@@ -14,7 +14,7 @@ function addCom() {
 		$year = date.getFullYear();
 		$hour = date.getHours();
 		$min = date.getMinutes();
-		if (0< $hour <10) {$hour = '0'+$hour;};
+		//if (0< $hour <10) {$hour = '0'+$hour;};
 		if ($min <10) {$min = '0'+$min;};
 		if ($d < 10) {$d = '0'+$d;};
 		if ((($user!='')&&($comment!=''))||(($user1!='')&&($comment1!='')))
